@@ -1,8 +1,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Pardip Rooprai
+# Date: 19/10/2026
 # Purpose: Handle FileNotFoundError
 # Usage: ./lab4e.py
 
