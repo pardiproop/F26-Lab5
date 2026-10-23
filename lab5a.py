@@ -6,13 +6,24 @@
 # Usage: ./lab5a.py
 
 # TO DO 1: Create data2.txt.
+with open("data2.txt") as dataFile:
+
 # TO DO 2: Complete the functions below.
 def read_file_lineByLine(file_name):
+    with open(file_name,"r") as readFile:
+        for line in readFile:
+            print(line.strip())
     # Takes file_name as a string, reads the file in a loop one line at a time and prints each line.
 def read_file_list(file_name):
+    lines_list=[]
+    with open(file_name,"r") as readFile:
+        for line in readFile:
+            lines_list.append(line.strip())
+    return lines_list
     # Takes a file_name as string, read file line by line and add the line in a list as a list element without new-line characters
     # Return the list.
 def main():
     file_name = 'data2.txt'
     read_file_lineByLine(file_name)
     print(read_file_list(file_name))
+
